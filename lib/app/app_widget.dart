@@ -33,15 +33,16 @@ class _AppWidgetState extends State<AppWidget> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: TodoListUiConfig.theme,
       title: "Todo List Provider",
       navigatorKey: TodoListNavigator.navigatorKey,
-      localizationsDelegates: [
+      localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      supportedLocales: [
-        const Locale("pt", "BR"),
+      supportedLocales: const [
+        Locale("pt", "BR"),
       ],
       routes: {
         ...AuthModule().routers,

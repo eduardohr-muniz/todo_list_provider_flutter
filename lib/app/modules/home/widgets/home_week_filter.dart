@@ -21,7 +21,7 @@ class HomeWeekFilter extends StatelessWidget {
             "DIA DA SEMANA",
             style: context.titleStyle,
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           SizedBox(
               height: 100,
               child: Selector<HomeController, DateTime>(

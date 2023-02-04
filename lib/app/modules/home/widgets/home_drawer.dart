@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:todo_list_provider/app/core/auth/auth_provider.dart';
 import 'package:todo_list_provider/app/core/ui/messages.dart';
 import 'package:todo_list_provider/app/core/ui/theme_extensions.dart';
-import 'package:todo_list_provider/app/modules/home/home_controller.dart';
 import 'package:todo_list_provider/app/repositories/tasks/tasks_repository.dart';
 import 'package:todo_list_provider/app/services/user/user_service.dart';
 
@@ -39,7 +38,7 @@ class HomeDrawer extends StatelessWidget {
                       builder: (_, value, __) {
                         return Text(
                           value,
-                          style: context.textTheme.subtitle2,
+                          style: context.textTheme.titleSmall,
                         );
                       },
                       selector: (context, authProvider) {

@@ -14,7 +14,7 @@ class HomeHeader extends StatelessWidget {
         builder: (context, value, child) {
           return Text(
             "E ai, $value!",
-            style: context.textTheme.headline5?.copyWith(
+            style: context.textTheme.headlineSmall?.copyWith(
               fontWeight: FontWeight.bold,
             ),
           );
